@@ -6,7 +6,7 @@ _______
 
 (1)http://www.cnblogs.com/huangcong/archive/2011/08/29/2158268.html
 
-(2)
+(2) a.columns = ['sdsdsd']
 
 
 2.zip 函数
@@ -42,7 +42,11 @@ ______
 (1)http://www.cnblogs.com/chaosimple/p/4153083.html
 基本概念那个看了好多遍的网站
 
-（2）
+（2） data.iloc[2,3]是没有columns 项目的， data.iloc[2:3,3:4]才会有现实列的名字
+
+(3) 改写第一个格子，con2.iloc[0,0]=1
+
+(4)删除bb.drop(['new','hi'],axis=1)  ／／ bb.drop([22,33],axis=0)
 
 6.下载数据
 _____
@@ -59,16 +63,27 @@ _______
 
 （3）pandas导出。http://www.jianshu.com/p/7764b6591cf5, 关于excel处理
 
+8. datetime/ time 函数
+_______
+
+(1)http://www.cnblogs.com/tkqasn/p/6001134.html ，介绍的非常详细，还有案例， 重点看这个
+
+(2)三种时间格式相互变化， 单独一种格式自身的变化， 单独时间的更改。
+
+9.画图
+________
+(1) http://www.cnblogs.com/zhizhan/p/5615947.html 基本画图
+
+（2）
 
 
 
-
-8.sta vs. machine culture
+10.sta vs. machine culture
 ____
 Statistical Modeling: The Two Cultures (with comments and a rejoinder by the author)
 https://zhuanlan.zhihu.com/p/27263369?group_id=857524243431313408
 
-9.
+9. dat
 ______
 *
 
