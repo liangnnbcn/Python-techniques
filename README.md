@@ -32,9 +32,11 @@ cleanedList = [x for x in dat if str(x) != 'nan' and str(x)!= '-inf']
 >>> np.delete(arr, [1,3,5], None)
 array([ 1,  3,  5,  7,  8,  9, 10, 11, 12])
 
-4.合并df
+4.合并df/筛选df
 ______
 (1)http://blog.csdn.net/stevenkwong/article/details/52528616
+
+(2)con3= con2.loc[(con2['cum']<con2['down'])]
 
 
 5. pandas＋dataframe 攻略
@@ -44,9 +46,14 @@ ______
 
 （2） data.iloc[2,3]是没有columns 项目的， data.iloc[2:3,3:4]才会有现实列的名字
 
-(3) 改写第一个格子，con2.iloc[0,0]=1
+(3) 改写第一个格子的数值，con2.iloc[0,0]=1，不是0:1没有冒号
 
 (4)删除bb.drop(['new','hi'],axis=1)  ／／ bb.drop([22,33],axis=0)
+
+(5)改写df格式，
+
+float（x）是改写单个http://www.cnblogs.com/wuxiangli/p/6046800.html ；不是数列或者dataframe，http://blog.csdn.net/jinruoyanxu/article/details/68065844
+
 
 6.下载数据
 _____
