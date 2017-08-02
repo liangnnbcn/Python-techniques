@@ -81,7 +81,9 @@ _______
 ________
 (1) http://www.cnblogs.com/zhizhan/p/5615947.html 基本画图
 
-（2）
+（2）矩阵图，相关系数图https://zhuanlan.zhihu.com/p/26100511
+
+（3）基本图形选择图http://www.jb51.net/article/105287.htm
 
 
 
