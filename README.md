@@ -1,7 +1,7 @@
 # Python-techniques
 
 
-1.字符串
+# 1.字符串
 _______
 
 (1)http://www.cnblogs.com/huangcong/archive/2011/08/29/2158268.html
@@ -9,13 +9,13 @@ _______
 (2) a.columns = ['sdsdsd']
 
 
-2.zip 函数
+# 2.zip 函数
 __________
 
 (1)http://www.cnblogs.com/frydsh/archive/2012/07/10/2585370.html
 
 
-3.drop
+# 3.drop
 _______
 
 (1)http://www.th7.cn/Program/Python/201412/329841.shtml
@@ -32,14 +32,14 @@ cleanedList = [x for x in dat if str(x) != 'nan' and str(x)!= '-inf']
 >>> np.delete(arr, [1,3,5], None)
 array([ 1,  3,  5,  7,  8,  9, 10, 11, 12])
 
-4.合并df/筛选df
+# 4.合并df/筛选df
 ______
 (1)http://blog.csdn.net/stevenkwong/article/details/52528616
 
 (2)con3= con2.loc[(con2['cum']<con2['down'])]
 
 
-5. pandas＋dataframe 攻略
+# 5. pandas＋dataframe 攻略
 ______
 (1)http://www.cnblogs.com/chaosimple/p/4153083.html
 基本概念那个看了好多遍的网站
@@ -55,14 +55,14 @@ ______
 float（x）是改写单个http://www.cnblogs.com/wuxiangli/p/6046800.html ；不是数列或者dataframe，http://blog.csdn.net/jinruoyanxu/article/details/68065844
 
 
-6.下载数据
+# 6.下载数据
 _____
 （1）http://www.open-open.com/lib/view/open1430982247726.html ， urllib中 urlretrieve() 函数
 
 （2）https://jingyan.baidu.com/article/2a138328424ae1074b134f56.html ，查找下载链接，google浏览器去 下载内容里面复制地址
 
 
-7. 导出excel
+# 7. 导出excel
 _______
 (1)xlsx 导出 。 http://blog.csdn.net/apple9005/article/details/54427663
 
@@ -70,18 +70,33 @@ _______
 
 （3）pandas导出。http://www.jianshu.com/p/7764b6591cf5, 关于excel处理
 
-8. datetime/ time 函数
+# 8. datetime/ time 函数
 _______
 
 (1)http://www.cnblogs.com/tkqasn/p/6001134.html ，介绍的非常详细，还有案例， 重点看这个
 
 (2)三种时间格式相互变化， 单独一种格式自身的变化， 单独时间的更改。
 
-9.画图
+
+
+# 9.画图
 ________
 (1) http://www.cnblogs.com/zhizhan/p/5615947.html 基本画图
 
 （2）矩阵图，相关系数图https://zhuanlan.zhihu.com/p/26100511
+
+```python
+fig = plt.figure() #相关系数矩阵图
+ax = fig.add_subplot(111)
+cax = ax.matshow(d12)  #绘制热力图，从-1到1
+fig.colorbar(cax)  #将matshow生成热力图设置为颜色渐变条
+ticks = np.arange(0,9,1) #生成0-9，步长为1
+ax.set_xticks(ticks)  #生成刻度
+ax.set_yticks(ticks)
+ax.set_xticklabels(d12.columns) #生成x轴标签
+ax.set_yticklabels(d12.index)
+plt.show()
+```
 
 （3）基本图形选择图http://www.jb51.net/article/105287.htm
 
@@ -100,7 +115,9 @@ ______
 
 12. list／series／array／dataframe
 _____
+
 （1）产生数据框架，等差数列
+```python
 d1=np.linspace(0.5,1.5,11,dtype=float)
 d2=np.linspace(0.5,1.5,11,dtype=float)
 d11=[]
@@ -110,6 +127,7 @@ d21=[]
 for i in range(10):
     d21.append(str(d1[i])+"D2")
 d12=pd.DataFrame(0,index=d11,columns=d21)
+```
 
 （2）
 
