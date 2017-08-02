@@ -132,7 +132,7 @@ d12=pd.DataFrame(0,index=d11,columns=d21)
 
 # 13.date
 ______
-(1)求今天
+(1)求今天http://www.cnblogs.com/emanlee/p/4399147.html
 
 （2）日期格式总结
 
