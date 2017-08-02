@@ -90,9 +90,24 @@ ____
 Statistical Modeling: The Two Cultures (with comments and a rejoinder by the author)
 https://zhuanlan.zhihu.com/p/27263369?group_id=857524243431313408
 
-9. dat
+11. optimize函数
 ______
-*
+（1） 复合函数，比如两分的那种还没找到最优，不知道是不是起点问题
 
-10.
+（2）类似solver功能还是能用的
+
+12. list／series／array／dataframe
 _____
+（1）产生数据框架，等差数列
+d1=np.linspace(0.5,1.5,11,dtype=float)
+d2=np.linspace(0.5,1.5,11,dtype=float)
+d11=[]
+for i in range(10):
+    d11.append(str(d1[i])+"D1")
+d21=[]
+for i in range(10):
+    d21.append(str(d1[i])+"D2")
+d12=pd.DataFrame(0,index=d11,columns=d21)
+
+（2）
+
