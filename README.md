@@ -101,19 +101,18 @@ plt.show()
 （3）基本图形选择图http://www.jb51.net/article/105287.htm
 
 
-
-10.sta vs. machine culture
+# 10.sta vs. machine culture
 ____
 Statistical Modeling: The Two Cultures (with comments and a rejoinder by the author)
 https://zhuanlan.zhihu.com/p/27263369?group_id=857524243431313408
 
-11. optimize函数
+# 11. optimize函数
 ______
 （1） 复合函数，比如两分的那种还没找到最优，不知道是不是起点问题
 
 （2）类似solver功能还是能用的
 
-12. list／series／array／dataframe
+# 12. list／series／array／dataframe
 _____
 
 （1）产生数据框架，等差数列
@@ -131,3 +130,10 @@ d12=pd.DataFrame(0,index=d11,columns=d21)
 
 （2）
 
+# 13.date
+______
+(1)求今天
+
+（2）日期格式总结
+
+（2）
