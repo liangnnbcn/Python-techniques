@@ -8,6 +8,17 @@ _______
 
 (2) a.columns = ['sdsdsd']
 
+(3)下载数据path
+```python
+import datetime
+now = datetime.datetime.now()
+now=now.strftime('%Y-%m-%d %H:%M:%S')  
+path='/Users/zengzhaoliang/Desktop/Python/债券研究/data0'+now+'.csv'
+
+data0.columns= col
+data0.to_csv('/Users/zengzhaoliang/Desktop/Python/债券研究/data0.csv')
+data0.to_csv(path)
+```
 
 # 2.zip 函数
 __________
