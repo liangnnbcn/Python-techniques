@@ -148,3 +148,22 @@ ______
 （2）日期格式总结
 
 （2）
+
+# 14.新浪下载数据的期货list制作
+_______
+(14.1) 期货list
+```python
+yr=np.linspace(2006,2017,11,dtype=int)
+Target=['M','Y','A']
+Month=['01','05','09']
+Future=[]
+for i in Target:
+    for ii in range(11):
+        a=str(yr[ii])
+        for iii in Month:
+            b= a[2:4]+iii
+            c= i+b
+            Future.append(c)
+```
+
+
