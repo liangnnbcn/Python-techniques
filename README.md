@@ -20,11 +20,14 @@ data0.to_csv('/Users/zengzhaoliang/Desktop/Python/债券研究/data0.csv')
 data0.to_csv(path)
 ```
 
-# 2.zip 函数
+# 2.zip 函数/其它函数
 __________
 
 (1)http://www.cnblogs.com/frydsh/archive/2012/07/10/2585370.html
 
+（2）python3 改版了，需要增加list（）函数：spread_A.columns= list(zip(future_A,future_A[1:]))
+
+（3）cumsum和cumprod 累加和累乘
 
 # 3.drop
 _______
@@ -43,11 +46,19 @@ cleanedList = [x for x in dat if str(x) != 'nan' and str(x)!= '-inf']
 >>> np.delete(arr, [1,3,5], None)
 array([ 1,  3,  5,  7,  8,  9, 10, 11, 12])
 
+（5）删除行
+data.drop(n)可以删除第i行
+import pandas as pd
+data=pd.DataFrame([[1,2,3],[4,5,6]])
+print data.drop(0)
+
 # 4.合并df/筛选df
 ______
 (1)http://blog.csdn.net/stevenkwong/article/details/52528616
 
 (2)con3= con2.loc[(con2['cum']<con2['down'])]
+
+(3)大小的筛选spread_A2=spread_A[(spread_A>-1000)&(spread_A<1000)]
 
 
 # 5. pandas＋dataframe 攻略
