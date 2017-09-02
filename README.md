@@ -150,7 +150,10 @@ for i in range(10):
 d12=pd.DataFrame(0,index=d11,columns=d21)
 ```
 
-（2）
+（2）dataframe 变成array
+
+np.array（dataframe） ＝ dataframe.values
+注意还有一种不要index的，dataframe['columns1'].values
 
 # 13.date
 ______
