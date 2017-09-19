@@ -20,6 +20,10 @@ data0.to_csv('/Users/zengzhaoliang/Desktop/Python/债券研究/data0.csv')
 data0.to_csv(path)
 ```
 
+(4)字符串 搜索／替换操作
+
+http://blog.csdn.net/seetheworld518/article/details/47346143
+
 # 2.zip 函数/其它函数
 __________
 
