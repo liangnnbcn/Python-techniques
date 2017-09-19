@@ -184,4 +184,16 @@ for i in Target:
             Future.append(c)
 ```
 
+(14.2)下载pdf（页面）／excel等等
+```python
+import os
+import urllib 
+yr = [17,16,15]
+for i in yr:
+    w = "http://www.shibor.org/shibor/web/html/downLoad.html?nameNew=Historical_Shibor_Data_20XX.xls&nameOld=Shibor%CA%FD%BE%DD20XX.xls&shiborSrc=http%3A%2F%2Fwww.shibor.org%2Fshibor%2F&downLoadPath=data"
+    w2 = w.replace("XX",str(i))#local = url.split('/')[-1]
+    name = "shibor-20" + str(i)
+    local = os.path.join('/Users/zengzhaoliang/Downloads/shibor data',name)
+    urllib.request.urlretrieve(w2,local)
+```
 
