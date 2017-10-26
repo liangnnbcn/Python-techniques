@@ -24,6 +24,10 @@ data0.to_csv(path)
 
 http://blog.csdn.net/seetheworld518/article/details/47346143
 
+(5)dataframe 数据格式变换
+
+从字符变成float ：  dataframe.astype(np.float) 。 http://blog.csdn.net/u011933487/article/details/38982485
+
 # 2.zip 函数/其它函数
 __________
 
@@ -80,6 +84,14 @@ ______
 
 float（x）是改写单个http://www.cnblogs.com/wuxiangli/p/6046800.html ；不是数列或者dataframe，http://blog.csdn.net/jinruoyanxu/article/details/68065844
 
+(6)dataframe 排序
+*对轴进行排序
+a.sort_index(axis=1,ascending=False)；
+其中axis=1表示对所有的columns进行排序，下面的数也跟着发生移动。后面的ascending=False表示按降序排列，参数缺失时默认升序。
+*对DataFrame中的值排序
+a.sort(columns='x')
+即对a中的x这一列，从小到大进行排序。注意仅仅是x这一列，而上面的按轴进行排序时会对所有的columns进行操作。
+*其它 ： http://blog.csdn.net/lemonbit/article/details/73302532
 
 # 6.下载数据
 _____
