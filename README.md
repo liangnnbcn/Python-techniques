@@ -74,6 +74,8 @@ ______
 (1)http://www.cnblogs.com/chaosimple/p/4153083.html
 基本概念那个看了好多遍的网站
 
+df合并非常齐全的网站http://blog.csdn.net/stevenkwong/article/details/52528616
+
 （2） data.iloc[2,3]是没有columns 项目的， data.iloc[2:3,3:4]才会有现实列的名字
 
 (3) 改写第一个格子的数值，con2.iloc[0,0]=1，不是0:1没有冒号
