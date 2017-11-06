@@ -62,12 +62,18 @@ print data.drop(0)
 
 # 4.合并df/筛选df
 ______
-(1)http://blog.csdn.net/stevenkwong/article/details/52528616
+(1)合并数据
+http://blog.csdn.net/stevenkwong/article/details/52528616
+http://www.usyiyi.cn/translate/Pandas_0j2/merging.html
+https://morvanzhou.github.io/tutorials/data-manipulation/np-pd/3-6-pd-concat/
 
 (2)con3= con2.loc[(con2['cum']<con2['down'])]
 
 (3)大小的筛选spread_A2=spread_A[(spread_A>-1000)&(spread_A<1000)]
 
+(4)
+
+(5)
 
 # 5. pandas＋dataframe 攻略
 ______
