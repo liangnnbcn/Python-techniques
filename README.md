@@ -71,7 +71,7 @@ https://morvanzhou.github.io/tutorials/data-manipulation/np-pd/3-6-pd-concat/
 
 (3)大小的筛选spread_A2=spread_A[(spread_A>-1000)&(spread_A<1000)]
 
-(4)
+(4)hsi_con.loc['20130103':'20130109'][['0001.HK','0002.HK']]
 
 (5)
 
