@@ -28,6 +28,8 @@ http://blog.csdn.net/seetheworld518/article/details/47346143
 
 从字符变成float ：  dataframe.astype(np.float) 。 http://blog.csdn.net/u011933487/article/details/38982485
 
+(6)str = ’0123456789′print str[0:3] #截取第一位到第三位的字符
+
 # 2.zip 函数/其它函数
 __________
 
