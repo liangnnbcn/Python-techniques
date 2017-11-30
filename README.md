@@ -109,6 +109,25 @@ _____
 
 （2）https://jingyan.baidu.com/article/2a138328424ae1074b134f56.html ，查找下载链接，google浏览器去 下载内容里面复制地址
 
+（3） 产生每个月 月初 和 月末 日期
+
+``` PYTHON
+import calendar as cal
+year_list = np.linspace(year1,year2,year2-year1+1)
+month = np.linspace(3,12,4)
+day=[]
+for year in year_list:
+year = int(year)
+for m in month:        
+m =int(m)        
+d = cal.monthrange(year, m)        if m <10:            day.append(str(year)+str(0)+str(m)+str(d[1]))        else:            day.append(str(year)+str(m)+str(d[1]))
+```
+(4)产生 季度
+q = ''def get_qua(T):    if int(T[-2:]) <= 3:        q = '_Q1'    elif  int(T[-2:]) <= 6:        q = '_Q2'    elif  int(T[-2:]) <= 9:        q = '_Q3'    elif  int(T[-2:]) <= 12:        q = '_Q4'    return T[0:4]+q
+
+(4)产生 月度
+def datelist(beginDate, endDate):    date_l=[datetime.strftime(x,'%Y%m') for x in list(pd.date_range(start=beginDate, end=endDate))]    return date_ldatelist = datelist(d1,d2)month_period = sorted(list(set(datelist)))
+
 
 # 7. 导出excel
 _______
